@@ -1,6 +1,7 @@
 body {
     background: black;
     margin: 0px;
+    font-family: "Montserrat", "Avenir";
 }
 
 .square {
@@ -8,7 +9,12 @@ body {
     background: purple;
     padding-bottom: 30%; /*same as saying: height of square = 30%*/
     float: left;
-    margin: 1.66%
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.5s;
+    --webkit-transition: background 0.5s;
+    --moz-transition: background 0.5s;
+    /* these two are for website support for transitions */
 }
 
 #container{
@@ -22,10 +28,14 @@ h1 {
     padding: 2%;
     margin: 0px;
     background: cadetblue;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 h1 span {
-    font-size: 3rem;
+    font-size: 2em;
 }
 
 button {
@@ -42,8 +52,30 @@ button {
 
 #result{
     color: black;
+    display: inline-block;
+    width: 20%;
 }
 
 .selected{
+    background: cadetblue;
+    color: white;
+}
+
+button {
+    border: none;
+    margin: 0;
+    height: 100%;
+    color: cadetblue;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+    /* Whenever the property changes on any button, it should take  s. */
+    --webkit-transition: all 0.5s;
+    --moz-transition: all 0.5s;
+}
+
+button:hover{
+    color:white;
     background: cadetblue;
 }
