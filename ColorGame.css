@@ -1,0 +1,49 @@
+body {
+    background: black;
+    margin: 0px;
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%; /*same as saying: height of square = 30%*/
+    float: left;
+    margin: 1.66%
+}
+
+#container{
+    margin: 0 auto; /*0 margin on the top and bottom, auto margin on left and right*/
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin: 0px;
+    background: cadetblue;
+}
+
+h1 span {
+    font-size: 3rem;
+}
+
+button {
+    justify-content: center;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+#result{
+    color: black;
+}
+
+.selected{
+    background: cadetblue;
+}
